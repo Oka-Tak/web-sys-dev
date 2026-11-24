@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>検索画面</title>
+</head>
+<body bgcolor="#e8e8e8">
+<center>
+<table width="90%" border="1" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
+<tr><td>
+<table width="100%"><tr>
+<td><font size="7"><b>Y書店</b></font></td>
+<td align="right"><font size="5"><a href="search.html">検索</a>　<a href="mypage.html">マイページ</a>　<a href="cart.html">カート</a></font></td>
+</tr></table>
+</td></tr>
+<tr><td height="600" valign="top">
+<font size="5">
+<h1>検索画面</h1>
+<form action="results.html" method="get">
+<table width="100%" border="1" cellpadding="15" cellspacing="0">
+<tr>
+<th width="18%" align="left"><label for="quick-title">書籍名</label></th>
+<td><input type="search" id="quick-title" name="quick-title" size="60" placeholder="ここに入力"> <button type="submit"><font size="4">検索</font></button></td>
+</tr>
+</table>
+<br>
+<details>
+<summary><b>詳細検索</b></summary>
+<br>
+<table width="100%" border="1" cellpadding="12" cellspacing="0">
+<tr><th width="18%" align="left"><label for="title">書籍名</label></th><td><input type="text" id="title" name="title" size="60"></td></tr>
+<tr><th align="left"><label for="series">シリーズ名</label></th><td><input type="text" id="series" name="series" size="60"></td></tr>
+<tr><th align="left"><label for="author">著者</label></th><td><input type="text" id="author" name="author" size="60"></td></tr>
+<tr><th align="left"><label for="publisher">出版社</label></th><td><input type="text" id="publisher" name="publisher" size="60"></td></tr>
+<tr><th align="left"><label for="isbn">ISBN</label></th><td><input type="text" id="isbn" name="isbn" size="40"></td></tr>
+<tr><th align="left"><label for="genre">ジャンル</label></th><td><select id="genre" name="genre"><option value="">選択してください</option><option>文学</option><option>ジャンル1</option><option>ジャンル2</option><option>ジャンル3</option><option>その他</option></select></td></tr>
+<tr><th align="left"><label for="year">出版年</label></th><td><input type="number" id="year" name="year" min="1000" max="2100"></td></tr>
+</table>
+<p align="right"><button type="reset"><font size="4">入力を消す</font></button>　<button type="submit"><font size="4">この条件で検索</font></button></p>
+</details>
+</form>
+</font>
+</td></tr>
+<tr><td align="center"><font size="4">Y書店 Web客注システム PoC</font></td></tr>
+</table>
+</center>
+</body>
+</html>

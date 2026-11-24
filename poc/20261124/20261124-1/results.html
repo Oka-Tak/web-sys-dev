@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>検索結果</title></head>
+<body bgcolor="#e8e8e8">
+<center>
+<table width="90%" border="1" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
+<tr><td><table width="100%"><tr><td><font size="7"><b>Y書店</b></font></td><td align="right"><font size="5"><a href="search.html">検索</a>　<a href="mypage.html">マイページ</a>　<a href="cart.html">カート</a></font></td></tr></table></td></tr>
+<tr><td height="600" valign="top"><font size="5">
+<h1>検索結果</h1>
+<p>書籍名で検索した場合、完全一致する書籍を先頭に、その下に部分一致する書籍を表示し，その他の項目で検索した場合は、該当する書籍を表示する想定。</p>
+<form action="results.html" method="get">
+<fieldset><legend><b>絞り込み・並べ替え</b></legend>
+<table width="100%" cellpadding="8">
+<tr>
+<td><label><input type="checkbox" name="use-author"> 著者</label></td><td><input type="text" name="author" size="18"></td>
+<td><label><input type="checkbox" name="use-year"> 出版年</label></td><td><input type="number" name="year"></td>
+</tr>
+<tr>
+<td><label><input type="checkbox" name="use-series"> シリーズ</label></td><td><input type="text" name="series" size="18"></td>
+<td><label><input type="checkbox" name="use-title"> タイトル</label></td><td><input type="text" name="title" size="18"> <label><input type="checkbox" name="partial"> 部分一致検索</label></td>
+</tr>
+<tr><td><label for="sort">並び順</label></td><td colspan="3"><select id="sort" name="sort"><option>指定なし</option><option>出版年が新しい順</option><option>出版年が古い順</option><option>タイトル順</option></select>　<button type="submit"><font size="4">適用</font></button></td></tr>
+</table>
+</fieldset>
+</form>
+<h2>完全一致</h2>
+<table width="100%" border="1" cellpadding="15" cellspacing="0">
+<tr><td width="16%" height="150" align="center" bgcolor="#dddddd">書籍画像</td><td><h2><a href="detail.html">書籍タイトルA</a></h2><p>著者A</p></td></tr>
+</table>
+<h2>部分一致</h2>
+<table width="100%" border="1" cellpadding="15" cellspacing="0">
+<tr><td width="16%" height="150" align="center" bgcolor="#dddddd">書籍画像</td><td><h2><a href="detail.html">書籍タイトルB</a></h2><p>著者B</p></td></tr>
+<tr><td height="150" align="center" bgcolor="#dddddd">書籍画像</td><td><h2><a href="detail.html">書籍タイトルC</a></h2><p>著者C</p></td></tr>
+<tr><td height="150" align="center" bgcolor="#dddddd">書籍画像</td><td><h2><a href="detail.html">書籍タイトルD</a></h2><p>著者D</p></td></tr>
+</table>
+<p align="center">1　<a href="results.html">2</a>　<a href="results.html">次へ</a></p>
+<p><a href="search.html">◀ 戻る</a></p>
+</font></td></tr>
+<tr><td align="center"><font size="4">Y書店 Web客注システム PoC</font></td></tr>
+</table>
+</center>
+</body>
+</html>
